@@ -1,6 +1,7 @@
 <template>
    <div>
-       <home-header>this is hedaer111</home-header>
+       <home-header></home-header>
+       <home-swiper></home-swiper>
 
    </div>
 
@@ -8,10 +9,12 @@
 
 <script>
 import HomeHeader from './compoents/Header'
+import HomeSwiper from './compoents/Swiper'
 export default {
   name: 'Home',
   components: {
-    HomeHeader
+    HomeHeader,
+    HomeSwiper
   }
 }
 </script>
