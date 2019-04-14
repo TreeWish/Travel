@@ -84,11 +84,16 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="stylus">
+    @import "../../../assets/styles/mixins.styl";
+    @import "../../../assets/styles/varibles.styl";
     .icons >>> .swiper-container
     {
         height: 0;
         padding-bottom: 56%;
+    }
+    .icons{
+        margin-top: .1rem;
     }
     .icon{
         position: relative;
@@ -122,10 +127,8 @@ export default {
         height: .44rem;
         line-height: .44rem;
         text-align: center;
-        color: #00bcd4;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+        color: #000000;
+        ellipsis();
     }
 
 </style>
