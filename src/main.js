@@ -9,10 +9,11 @@ import 'styles/reset.css'
 import 'styles/iconfont.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
-
+import axios from 'axios'
 Vue.config.productionTip = false
 fastClick.attach(document.body)
 Vue.use(VueAwesomeSwiper)
+Vue.prototype.$ajax = axios
 
 /* eslint-disable no-new */
 new Vue({
