@@ -20,7 +20,7 @@
     "vue": "^2.5.2",
     "vue-awesome-swiper": "^2.6.7",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1",
+    "vuex": "^3.1.0",
     "webpack-dev-server": "^2.9.1"
   },
   "devDependencies": {
