@@ -57,13 +57,13 @@ export default {
     }
   },
   computed: {
-    ...mapState(['city'])
+    ...mapState(['city']) // vuex 中 map 的方法调用 store中的数据
   },
   mounted () {
     this.lastCity = this.city
     this.getHomeInfo()
   },
-  activated () {
+  activated () { // 使用keepc-city 新添加 的属性
     if (this.lastCity !== this.city) {
       this.lastCity = this.city
       this.getHomeInfo()
