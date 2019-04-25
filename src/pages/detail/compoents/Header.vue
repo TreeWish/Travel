@@ -38,6 +38,9 @@ export default {
   },
   activated () { // keep -alive 带的生命周期函数
     window.addEventListener('scroll', this.handleScroll)
+  },
+  deactivated () {
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
