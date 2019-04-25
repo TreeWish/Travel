@@ -21,7 +21,7 @@ export default new Router({
     component: Detail
   }
   ],
-  scrollBehavior (to, from, savedPosition) {
+  scrollBehavior (to, from, savedPosition) { // 页面切换，让滚动初始位置为0
     return { x: 0, y: 0 }
   }
 })

@@ -2,7 +2,7 @@
 <div class="container" @click="hanleGallaryClick">
     <div class="wrapper">
         <swiper :options="swiperOption">
-            <swiper-slide  v-for="(item, index) of imgs" :key="index">
+            <swiper-slide  v-for="(item, index) of gallaryImgs" :key="index">
                 <img class="gallary-img" :src="item" alt="">
             </swiper-slide>
             <div class="swiper-pagination"  slot="pagination"></div>
@@ -16,7 +16,7 @@
 export default {
   name: 'CommonGallary',
   props: {
-    imgs: {
+    gallaryImgs: {
       type: Array,
       default () {
         return []
